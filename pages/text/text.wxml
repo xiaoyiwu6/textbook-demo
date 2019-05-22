@@ -1,0 +1,20 @@
+<!--pages/text/text.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">textbook</view>
+    <!-- <view class="page__desc">列表</view> -->
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells__title">记事本</view>
+    <view class="weui-cells weui-cells_after-title" wx:for="{{textbooks}}" wx:key="*this.title" wx:for-item="textbook">
+      <navigator url="{{text_content_route+'?id='+textbook.id}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">{{textbook.title}}</view>
+        <view class="weui-cell__ft">{{textbook.date}}</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+  </view>
+  <view class='add' bindtap='add_text'>
+    <image src='../../images/edit.png'></image>
+  </view>
+</view>

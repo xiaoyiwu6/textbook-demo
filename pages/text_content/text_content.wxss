@@ -1,0 +1,6 @@
+/* pages/text_content/text_content.wxss */
+@import "../lib/weui.wxss";
+
+page{
+    background-color: #FFFFFF;
+}

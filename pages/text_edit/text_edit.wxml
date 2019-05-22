@@ -1,0 +1,31 @@
+<!--pages/text_edit/text_edit.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Input</view>
+    <view class="page__desc">表单输入</view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="page__bd">
+      <view class="weui-cells__title">文本框</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入标题" name="title" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells__title">文本域</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em"  name="content"  bindinput='wordLimit' />
+            <view class="weui-textarea-counter">{{contentInputLength}}/200</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type="submit">确定</button>
+      </view>
+    </view>
+  </form>
+</view>

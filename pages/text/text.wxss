@@ -1,0 +1,19 @@
+/* pages/text/text.wxss */
+@import "../lib/weui.wxss";
+.add {
+  position: absolute;
+  right: 58rpx;
+  bottom: 58rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  height: 100rpx;
+  background: #e8eceb;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+.add image {
+  width: 48rpx;
+  height: 48rpx;
+}

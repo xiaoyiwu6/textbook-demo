@@ -1,0 +1,2 @@
+/* pages/text_edit/text_edit.wxss */
+@import "../lib/weui.wxss"
