@@ -2,7 +2,7 @@
 App({
   onLaunch: function () {
 
-    //wx.setStorageSync('textbooks', [{title:"asas", content:"asdsad", id:"0", date:"2019/5/22 下午7:37:49"}]);
+    //wx.setStorageSync('textbooks', [{title:"sb杨", content:"你就是傻嗨", id:"0", date:"2019/5/22 下午7:37:49"}]);
     wx.getStorage({
       key: 'current_id',
       success(res){
